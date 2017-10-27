@@ -18,3 +18,6 @@ class BDbase(metaclass=ABCMeta):
 
     def gotoHomepage(self):
         self.driver.get("http://www.baidu.com")
+
+    def getCurrentUrl(self):
+        return self.driver.current_url
